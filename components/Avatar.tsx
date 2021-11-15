@@ -1,7 +1,9 @@
 import React from 'react';
-import { User } from '../types/User';
+import { useUser } from '../providers/UserProvider';
 
-const Avatar = ({ user }: { user: User }) => {
+const Avatar = () => {
+  const user = useUser();
+
   return (
     <div className="border-2 border-green-400 inline-block">
       {user && (
