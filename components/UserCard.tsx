@@ -3,7 +3,8 @@ import Avatar from './Avatar';
 
 const UserCard = ({ user }: { user: User }) => {
   return (
-    <div className="shadow rounded bg-white p-10">
+    <div className="border-2 border-green-400 shadow rounded bg-white p-4">
+      <h2 className="font-bold text-lg">ユーザーカード</h2>
       <Avatar user={user} />
     </div>
   );
